@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CaTinder.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CaTinder"
+    xmlns:pages="clr-namespace:CaTinder.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Title="CaTinder">
+
+    <TabBar>
+        <ShellContent
+            Title="Browse"
+            ContentTemplate="{DataTemplate pages:BrowseView}"
+            Icon="cat.png"
+/>
+        <ShellContent
+            Title="Me"
+            ContentTemplate="{DataTemplate pages:MePage}"
+            Icon="person.png"
+/>
+<!--         <ShellContent -->
+<!--             Title="Chat" -->
+<!--             ContentTemplate="{DataTemplate pages:ChatView}" -->
+<!--             Icon="message.png" -->
+<!-- /> -->
+        <ShellContent
+            Title="Settings"
+            ContentTemplate="{DataTemplate pages:SettingsPage}"
+            Icon="gear.png"
+/>
+    </TabBar>
+
+</Shell>

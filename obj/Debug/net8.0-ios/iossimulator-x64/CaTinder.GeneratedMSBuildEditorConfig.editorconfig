@@ -1,0 +1,89 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CaTinder
+build_property.ProjectDir = /Users/pascal/source/school/M322/CaTinder/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/pascal/source/school/M322/CaTinder/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/BrowseView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.BrowseView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/BrowseView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/BrowseView.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/ChatView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.ChatView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ChatView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ChatView.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/FAQPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.FAQPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/FAQPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/FAQPage.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/InfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.InfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/InfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/InfoPage.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/MePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.MePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/MePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/MePage.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/SearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.SearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/SearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/SearchPage.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/SettingsPage.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Pages/UserDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Pages.UserDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/UserDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/UserDetailPage.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/pascal/source/school/M322/CaTinder/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CaTinder.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml

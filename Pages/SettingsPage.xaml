@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaTinder.Pages.SettingsPage"
+             Title="Settings"
+             BackgroundColor="#F2F2F7">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                
+                <!-- General Settings Section -->
+                <VerticalStackLayout Spacing="5">
+                <Label Text="General" FontSize="Small" TextColor="LightSlateGray"></Label>
+                <Frame CornerRadius="10" BackgroundColor="White" HasShadow="False" Padding="0" BorderColor="Transparent">
+                    <ListView x:Name="GeneralSettingsList" SeparatorVisibility="Default" BackgroundColor="Transparent" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="10" ColumnDefinitions="*,Auto">
+                                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontFamily="SFProSemibod"/>
+                                        <Switch IsToggled="{Binding IsToggled}" Grid.Column="1" VerticalOptions="Center"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+                </VerticalStackLayout>
+                
+                
+                <!-- Privacy Settings Section -->
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Privacy and Security" FontSize="Small" TextColor="LightSlateGray"></Label>
+                <Frame CornerRadius="10" BackgroundColor="White" HasShadow="False" Padding="0" BorderColor="Transparent">
+                    <ListView x:Name="PrivacySettingsList" SeparatorVisibility="Default" BackgroundColor="Transparent" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="10" ColumnDefinitions="*,Auto">
+                                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontFamily="SFProSemibod"/>
+                                        <Switch IsToggled="{Binding IsToggled}" Grid.Column="1" VerticalOptions="Center"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+                </VerticalStackLayout>
+
+                
+                <!-- Notification Settings Section -->
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Notifications" FontSize="Small" TextColor="LightSlateGray"></Label>
+                <Frame CornerRadius="10" BackgroundColor="White" HasShadow="False" Padding="0" BorderColor="Transparent">
+                    <ListView x:Name="NotificationSettingsList" SeparatorVisibility="Default" BackgroundColor="Transparent" SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="10" ColumnDefinitions="*,Auto">
+                                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontFamily="SFProSemibod"/>
+                                        <Switch IsToggled="{Binding IsToggled}" Grid.Column="1" VerticalOptions="Center"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+                </VerticalStackLayout>
+
+                
+                <VerticalStackLayout Spacing="5">
+                <Label Text="App Volume" TextColor="LightSlateGray" FontSize="Small"></Label>
+                <Slider x:Name="VolumeSlider" Minimum="0" Maximum="100" Value="50" />
+                </VerticalStackLayout>
+                
+                <Button Text="FAQ" Clicked="OnFAQClicked" />
+                <Button Text="Info" Clicked="OnAppInfoClicked" />
+               
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

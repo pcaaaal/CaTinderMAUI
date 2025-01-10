@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaTinder.Pages.InfoPage"
+             Title="App Information">
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="20">
+            <Label Text="App Information" FontSize="Large" FontAttributes="Bold" />
+            <Label Text="App Version: 1.0.0" FontSize="Medium" />
+            <Label Text="Developed by: Pascal Burri" FontSize="Medium" />
+            <Label Text="© 2025 Swisscom" FontSize="Small" />
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaTinder.Pages.FAQPage"
+             Title="FAQ">
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="Frequently Asked Questions" FontSize="Large" FontFamily="SFProSemibold"/>
+        <VerticalStackLayout Spacing="5">
+            <Label Text="How do I create a profile?" FontSize="Medium" FontFamily="SFProSemibold" />
+            <Label Text="You can create a profile by filling out your personal details and cat information." FontSize="Medium" />
+        </VerticalStackLayout>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="How do I reset my data?" FontSize="Medium" FontFamily="SFProSemibold" />
+                <Label Text="You can reset your data from the settings page." FontSize="Medium" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

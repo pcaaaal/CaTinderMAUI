@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaTinder.Pages.MePage"
+             Title="Me">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <!-- User Information Section -->
+                <Label Text="User Information" FontSize="Large" FontFamily="SFProSemibold"/>
+
+                <!-- Full Name -->
+                <VerticalStackLayout Padding="0" Spacing="5">
+                    <Label Text="Your name" FontFamily="SFProSemibold" />
+                    <Frame HasShadow="False" Padding="0" BorderColor="LightGray" CornerRadius="5">
+                        <Entry x:Name="FullNameEntry" Placeholder="Enter your full name" 
+                               IsSpellCheckEnabled="False" 
+                               Focused="OnEntryFocused" Unfocused="OnEntryUnfocused"/>
+                    </Frame>
+                    <Label x:Name="FullNameError" TextColor="Red" IsVisible="False" />
+                </VerticalStackLayout>
+
+                <!-- Gender Picker -->
+                <VerticalStackLayout Padding="0" Spacing="5">
+                    <Label Text="Your gender" FontFamily="SFProSemibold" />
+                    <Frame HasShadow="False" Padding="0" BorderColor="LightGray" CornerRadius="5">
+                        <Picker x:Name="GenderPicker" 
+                                Focused="OnPickerFocused" Unfocused="OnPickerUnfocused">
+                            <Picker.Items>
+                                <x:String>Male</x:String>
+                                <x:String>Female</x:String>
+                                <x:String>Other</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+                    <Label x:Name="GenderError" TextColor="Red" IsVisible="False" />
+                </VerticalStackLayout>
+
+                <!-- Username -->
+                <VerticalStackLayout Padding="0" Spacing="5">
+                    <Label Text="Pick a username" FontFamily="SFProSemibold" />
+                    <Frame HasShadow="False" Padding="0" BorderColor="LightGray" CornerRadius="5">
+                        <Entry x:Name="UsernameEntry" Placeholder="Choose a username" 
+                               IsSpellCheckEnabled="False" 
+                               Focused="OnEntryFocused" Unfocused="OnEntryUnfocused"/>
+                    </Frame>
+                    <Label x:Name="UsernameError" TextColor="Red" IsVisible="False" />
+                </VerticalStackLayout>
+
+                <!-- Cat Information Section -->
+                <Label Text="Cat Information" FontSize="Large" FontFamily="SFProSemibold" />
+                
+                <!-- Cat Name -->
+                <VerticalStackLayout Padding="0" Spacing="5">
+                    <Label Text="Your cat's name" FontFamily="SFProSemibold" />
+                    <Frame HasShadow="False" Padding="0" BorderColor="LightGray" CornerRadius="5">
+                        <Entry x:Name="CatNameEntry" Placeholder="Enter your cat's name" 
+                               IsSpellCheckEnabled="False" 
+                               Focused="OnEntryFocused" Unfocused="OnEntryUnfocused"/>
+                    </Frame>
+                    <Label x:Name="CatNameError" TextColor="Red" IsVisible="False" />
+                </VerticalStackLayout>
+                
+                <!-- Cat Photo -->
+                <VerticalStackLayout Padding="0" Spacing="10">
+                    <Button Text="Pick a photo for your cat" Clicked="OnPickPhotoClicked" />
+                    <Image x:Name="CatPhotoPreview" HeightRequest="200" Aspect="AspectFill" IsVisible="False">
+                        <Image.Clip>
+                            <RoundRectangleGeometry 
+                                Rect="0,0,200,200" 
+                                CornerRadius=" 10"/>
+                        </Image.Clip>
+                    </Image>
+                </VerticalStackLayout>
+
+                <!-- Cat Age -->
+                <VerticalStackLayout Padding="0" Spacing="5">
+                    <Label Text="Your cat's age" FontFamily="SFProSemibold" />
+                    <Frame HasShadow="False" Padding="0" BorderColor="LightGray" CornerRadius="5">
+                        <DatePicker x:Name="CatAgePicker" MaximumDate="{Binding DateTime.Now}"
+                                    Focused="OnDatePickerFocused" Unfocused="OnDatePickerUnfocused"/>
+                    </Frame>
+                    <Label x:Name="CatAgeError" TextColor="Red" IsVisible="False" />
+                </VerticalStackLayout>
+
+                <!-- Cat Gender -->
+                <VerticalStackLayout Padding="0" Spacing="5">
+                    <Label Text="Your cat's gender" FontFamily="SFProSemibold" />
+                    <Frame HasShadow="False" Padding="0" BorderColor="LightGray" CornerRadius="5">
+                        <Picker x:Name="CatGenderPicker" 
+                                Focused="OnPickerFocused" Unfocused="OnPickerUnfocused">
+                            <Picker.Items>
+                                <x:String>Male</x:String>
+                                <x:String>Female</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+                    <Label x:Name="CatGenderError" TextColor="Red" IsVisible="False" />
+                </VerticalStackLayout>
+
+                <Button Text="Save" Clicked="OnSaveClicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
