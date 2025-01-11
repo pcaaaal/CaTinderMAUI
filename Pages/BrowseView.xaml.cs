@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace CaTinder.Pages;
 
 public partial class BrowseView : ContentPage
 {
+    
     
     private async void OnSearchClicked(object sender, EventArgs e)
     {
@@ -18,4 +20,6 @@ public partial class BrowseView : ContentPage
     {
         InitializeComponent();
     }
+    
+    
 }

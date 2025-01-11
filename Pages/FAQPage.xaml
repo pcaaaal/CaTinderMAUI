@@ -11,8 +11,12 @@
             <Label Text="You can create a profile by filling out your personal details and cat information." FontSize="Medium" />
         </VerticalStackLayout>
             <VerticalStackLayout Spacing="5">
-                <Label Text="How do I reset my data?" FontSize="Medium" FontFamily="SFProSemibold" />
-                <Label Text="You can reset your data from the settings page." FontSize="Medium" />
+                <Label Text="How do I sync my information across devices?" FontSize="Medium" FontFamily="SFProSemibold" />
+                <Label Text="You can enable iCloud sync in the settings." FontSize="Medium" />
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Can others see my Full Name" FontSize="Medium" FontFamily="SFProSemibold" />
+                <Label Text="You can enable allow search by others in the settings to allow others to find you by your full name. Otherwise your full name is not visible." FontSize="Medium" />
             </VerticalStackLayout>
         </VerticalStackLayout>
     </ContentPage.Content>

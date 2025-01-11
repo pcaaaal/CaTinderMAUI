@@ -12,7 +12,8 @@ namespace CaTinder.Pages
 
         }
         
-        // Change border color on Entry focus/unfocus
+
+        
         private void OnEntryFocused(object sender, FocusEventArgs e)
         {
             var frame = (sender as Entry).Parent as Frame;
@@ -25,7 +26,6 @@ namespace CaTinder.Pages
             frame.BorderColor = Colors.LightGray;
         }
 
-        // Change border color on Picker focus/unfocus
         private void OnPickerFocused(object sender, FocusEventArgs e)
         {
             var frame = (sender as Picker).Parent as Frame;
@@ -50,8 +50,7 @@ namespace CaTinder.Pages
             frame.BorderColor = Colors.LightGray;
         }
 
-        // Handle photo picking
-        private async void OnPickPhotoClicked(object sender, EventArgs e)
+        private async void OnPickCatPhotoClicked(object sender, EventArgs e)
         {
             try
             {
@@ -69,6 +68,7 @@ namespace CaTinder.Pages
             }
         }
         
+        
         private void OnCatPhotoSizeChanged(object sender, EventArgs e)
         {
             if (CatPhotoPreview.Width > 0 && CatPhotoPreview.Height > 0)
@@ -80,75 +80,77 @@ namespace CaTinder.Pages
                 };
             }
         }
-
+        
         
 
-
         private void OnSaveClicked(object sender, EventArgs e)
-        {
-            bool isValid = true;
+{
+    bool isValid = true;
 
-            // Reset error messages
-            FullNameError.IsVisible = false;
-            GenderError.IsVisible = false;
-            UsernameError.IsVisible = false;
-            CatNameError.IsVisible = false;
-            CatAgeError.IsVisible = false;
-            CatGenderError.IsVisible = false;
+    // Reset error messages
+    FullNameError.IsVisible = false;
+    GenderError.IsVisible = false;
+    UsernameError.IsVisible = false;
+    CatNameError.IsVisible = false;
+    CatAgeError.IsVisible = false;
+    CatGenderError.IsVisible = false;
+    CatPhotoError.IsVisible = false;
 
-            // User Full Name validation
-            if (string.IsNullOrEmpty(FullNameEntry.Text))
-            {
-                FullNameError.Text = "Full Name is required";
-                FullNameError.IsVisible = true;
-                isValid = false;
-            }
+    if (string.IsNullOrEmpty(FullNameEntry.Text))
+    {
+        FullNameError.Text = "Full Name is required";
+        FullNameError.IsVisible = true;
+        isValid = false;
+    }
 
-            // Gender validation
-            if (GenderPicker.SelectedIndex == -1)
-            {
-                GenderError.Text = "Gender is required";
-                GenderError.IsVisible = true;
-                isValid = false;
-            }
+    if (GenderPicker.SelectedIndex == -1)
+    {
+        GenderError.Text = "Gender is required";
+        GenderError.IsVisible = true;
+        isValid = false;
+    }
 
-            // Username validation
-            if (string.IsNullOrEmpty(UsernameEntry.Text))
-            {
-                UsernameError.Text = "Username is required";
-                UsernameError.IsVisible = true;
-                isValid = false;
-            }
+    if (string.IsNullOrEmpty(UsernameEntry.Text))
+    {
+        UsernameError.Text = "Username is required";
+        UsernameError.IsVisible = true;
+        isValid = false;
+    }
 
-            // Cat Name validation
-            if (string.IsNullOrEmpty(CatNameEntry.Text))
-            {
-                CatNameError.Text = "Cat's Name is required";
-                CatNameError.IsVisible = true;
-                isValid = false;
-            }
+    if (string.IsNullOrEmpty(CatNameEntry.Text))
+    {
+        CatNameError.Text = "Cat's Name is required";
+        CatNameError.IsVisible = true;
+        isValid = false;
+    }
 
-            // Cat Age validation
-            if (CatAgePicker.Date > DateTime.Now)
-            {
-                CatAgeError.Text = "Cat's age cannot be in the future";
-                CatAgeError.IsVisible = true;
-                isValid = false;
-            }
+    if (CatAgePicker.Date > DateTime.Now)
+    {
+        CatAgeError.Text = "Cat's age cannot be in the future";
+        CatAgeError.IsVisible = true;
+        isValid = false;
+    }
 
-            // Cat Gender validation
-            if (CatGenderPicker.SelectedIndex == -1)
-            {
-                CatGenderError.Text = "Cat's Gender is required";
-                CatGenderError.IsVisible = true;
-                isValid = false;
-            }
+    if (CatGenderPicker.SelectedIndex == -1)
+    {
+        CatGenderError.Text = "Cat's Gender is required";
+        CatGenderError.IsVisible = true;
+        isValid = false;
+    }
 
-            if (isValid)
-            {
-                // Form is valid, proceed with saving or navigation
-                DisplayAlert("Success", "Your details have been saved successfully!", "OK");
-            }
-        }
+    if (CatPhotoPreview.Source == null || !CatPhotoPreview.IsVisible)
+    {
+        CatPhotoError.Text = "Cat's photo is required";
+        CatPhotoError.IsVisible = true;
+        isValid = false;
+    }
+
+    if (isValid)
+    {
+        SharedData.Instance.FullName = FullNameEntry.Text;
+        DisplayAlert("Success", "Your details have been saved successfully!", "OK");
+    }
+}
+
     }
 }

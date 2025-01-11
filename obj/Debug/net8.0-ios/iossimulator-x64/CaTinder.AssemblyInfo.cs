@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CaTinder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+16df36e8281285b271c481a3274fe513624bf994")]
 [assembly: System.Reflection.AssemblyProductAttribute("CaTinder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CaTinder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

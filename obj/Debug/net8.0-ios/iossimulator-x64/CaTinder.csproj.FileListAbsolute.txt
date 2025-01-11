@@ -340,3 +340,16 @@
 /Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/magnifyingglass@3x.png
 /Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/magnifyingglass@2x.png
 /Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/magnifyingglass.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/heart@3x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/heart@2x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/heart.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/info@3x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/info@2x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/info.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/x@3x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/x@2x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/x.png
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/CaTinder.sourcelink.json
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/Resources/cat1.jpg
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/Resources/cat2.jpg
+/Users/pascal/source/school/M322/CaTinder/obj/Debug/net8.0-ios/iossimulator-x64/resizetizer/r/Resources/cat3.jpg

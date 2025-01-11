@@ -7,12 +7,13 @@ namespace CaTinder.Pages
         public SettingsPage()
         {
             InitializeComponent();
+
             
             var generalSettings = new List<SettingItem>
             {
                 new SettingItem { Title = "Enable Location", IsToggled = true },
-                new SettingItem { Title = "Use Lightmode", IsToggled = false },
-                new SettingItem { Title = "Enable Icloud Sync", IsToggled = true },
+                new SettingItem { Title = "Use Lightmode", IsToggled = true },
+                new SettingItem { Title = "Enable Icloud Sync", IsToggled = false },
             };
             
             var privacySettings = new List<SettingItem>
@@ -35,6 +36,21 @@ namespace CaTinder.Pages
             PrivacySettingsList.ItemsSource = privacySettings;
             NotificationSettingsList.ItemsSource = notificationSettings;
 
+        }
+        
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (SharedData.Instance.FullName != null)
+            {
+                NameLabel.Text = SharedData.Instance.FullName;
+
+            }
+            else
+            {
+                NameLabel.Text = "Name not set yet!";
+            }
         }
         
         public class SettingItem

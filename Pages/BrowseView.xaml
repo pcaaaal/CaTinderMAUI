@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CaTinder.Pages.BrowseView"
              Title="Browse">
+    
+    <!-- Title Section -->
     <Shell.TitleView>
         <Grid>
             <Label Text="Browse"
@@ -19,5 +20,35 @@
                 Clicked="OnSearchClicked" />
         </Grid>
     </Shell.TitleView>
-    
+
+    <!-- Content Layout -->
+    <Grid RowDefinitions="*,Auto" BackgroundColor="White">
+        <!-- Top Frame Fills Remaining Space -->
+        <Frame BackgroundColor="Transparent" VerticalOptions="FillAndExpand" BorderColor="Transparent" Padding="20,20,20,0">
+            <Grid x:Name="CatStack">
+                <!-- <Frame BackgroundColor="Transparent" BorderColor="Transparent" CornerRadius="25" Padding="0"> -->
+                <!--     <Image Source="cat1.jpg" Aspect="AspectFill" x:Name="image1"></Image> -->
+                <!-- </Frame> -->
+                <Frame BackgroundColor="Transparent" BorderColor="Transparent" CornerRadius="25" Padding="0">
+                    <Image Source="cat2.jpg" Aspect="AspectFill" x:Name="image2"></Image>
+                </Frame>
+                <!-- <Frame BackgroundColor="Transparent" BorderColor="Transparent" CornerRadius="25" Padding="0"> -->
+                <!--     <Image Source="cat3.jpg" Aspect="AspectFill" x:Name="image3"></Image> -->
+                <!-- </Frame> -->
+            </Grid>
+        </Frame>
+        <!-- Icons at the Bottom -->
+        <HorizontalStackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30" Padding="0, 20">
+            <!-- Icon Buttons Inside Circles -->
+            <Frame CornerRadius="25" BackgroundColor="#E0E0E0" Padding="10" HeightRequest="50" WidthRequest="50" BorderColor="Transparent">
+                <ImageButton Source="x.png" />
+            </Frame>
+            <Frame CornerRadius="25" BackgroundColor="#E0E0E0" Padding="10" HeightRequest="50" WidthRequest="50" BorderColor="Transparent">
+                <ImageButton Source="info.png"/>
+            </Frame>
+            <Frame CornerRadius="25" BackgroundColor="#E0E0E0" Padding="10" HeightRequest="50" WidthRequest="50" BorderColor="Transparent">
+                <ImageButton Source="heart.png"/>
+            </Frame>
+        </HorizontalStackLayout>
+    </Grid>
 </ContentPage>

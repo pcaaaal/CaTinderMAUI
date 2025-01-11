@@ -8,7 +8,7 @@
             <Label Text="App Information" FontSize="Large" FontAttributes="Bold" />
             <Label Text="App Version: 1.0.0" FontSize="Medium" />
             <Label Text="Developed by: Pascal Burri" FontSize="Medium" />
-            <Label Text="© 2025 Swisscom" FontSize="Small" />
+            <Label Text="© 2025 Gibb Bern" FontSize="Medium" />
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

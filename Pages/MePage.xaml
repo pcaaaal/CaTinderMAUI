@@ -63,7 +63,8 @@
                 
                 <!-- Cat Photo -->
                 <VerticalStackLayout Padding="0" Spacing="10">
-                    <Button Text="Pick a photo for your cat" Clicked="OnPickPhotoClicked" />
+                    <Button Text="Pick a photo for your cat" Clicked="OnPickCatPhotoClicked" />
+                    <Label x:Name="CatPhotoError" TextColor="Red" IsVisible="False" />
                     <Image x:Name="CatPhotoPreview" HeightRequest="200" Aspect="AspectFill" IsVisible="False">
                         <Image.Clip>
                             <RoundRectangleGeometry 
